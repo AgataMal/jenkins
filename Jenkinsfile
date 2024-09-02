@@ -8,10 +8,5 @@ pipeline {
                 }
             }
         }
-        stage('Config') {
-            timeout(60, unit: 'SECONDS') {
-                input(message:'OK?', ok: 'done')
-            }
-        }
     }
 }
