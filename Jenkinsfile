@@ -1,7 +1,7 @@
 pipeline {
     agent any    
     stages {
-        parallel {
+
             stage('stage1') {
                 steps {
                     script {
@@ -15,8 +15,6 @@ pipeline {
                         	sh "echo 'stage 2'"
                     }
                 }
-            }                
-        }
-
+            }        
     }
 }
